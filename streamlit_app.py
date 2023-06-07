@@ -22,6 +22,6 @@ streamlit.dataframe(fruit_list.loc[selected_fruits])
 
 streamlit.header('Fruityvice Fruit Advice')
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-streamlit.dataframe(pandas.json_normalize(fruityvice_response.json()))
+streamlit.dataframe(pd.json_normalize(fruityvice_response.json()))
 
 
