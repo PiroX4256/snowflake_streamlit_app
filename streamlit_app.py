@@ -1,4 +1,9 @@
 import streamlit
+import pandas as pd
+
+fruit_list = pd.read_csv('https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt')
+
+streamlit.dataframte(fruit_list)
 
 streamlit.title('My parents new healthy diner')
 streamlit.header('Breakfast Menu')
